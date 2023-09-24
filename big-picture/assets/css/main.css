@@ -1930,7 +1930,7 @@ input, select, textarea {
 	}
 
 		.main > .content {
-			width: 45em;
+			width: 65em;
 			max-width: calc(100% - 4em);
 			margin: 0 auto;
 		}
@@ -1938,6 +1938,52 @@ input, select, textarea {
 			.main > .content > :last-child {
 				margin-bottom: 0;
 			}
+
+
+			#intro .social-links {
+				margin-top: 40px;
+				display: flex;
+			  }
+			  
+			  #intro .social-links a {
+				font-size: 16px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background: rgba(255, 255, 255, 0.1);
+				color: #fff;
+				line-height: 1;
+				margin-right: 8px;
+				border-radius: 50%;
+				width: 40px;
+				height: 40px;
+				text-decoration: none;
+			  }
+			  
+			  #intro .social-links a:hover {
+				background: #18d26e;
+			  }
+
+			  @media (max-width: 992px) {
+				#intro h1 {
+				  font-size: 36px;
+				}
+			  
+				#intro h2 {
+				  font-size: 20px;
+				  line-height: 30px;
+				}
+			  
+				#intro .social-links {
+				  margin-top: 15px;
+				}
+			  
+				#intro .container {
+				  display: flex;
+				  flex-direction: column;
+				  align-items: center;
+				}
+			  }
 
 		.main.fullscreen {
 			min-height: 100%;
@@ -1955,6 +2001,15 @@ input, select, textarea {
 			text-align: center;
 			padding: 3em 0 3em 0;
 		}
+
+			.main.style1 .text-left{
+				text-align: left;
+			}
+
+			.main.style1 h1 {
+			font-size: 2.25em;
+			line-height: 2em;
+			}
 
 			.main.style1 h2 {
 				font-size: 4.25em;
@@ -1976,6 +2031,12 @@ input, select, textarea {
 
 			.main.style1.inactive > .content {
 				opacity: 0;
+			}
+
+			.main.style1 > .content footer {
+				margin-top: 0;
+				top: 10vh;
+				position: relative
 			}
 
 		.main.style2 {
@@ -2081,7 +2142,7 @@ input, select, textarea {
 		@media screen and (max-width: 1920px) {
 
 			.main.style2 .content {
-				width: 40%;
+				width: 45%;
 			}
 
 		}
