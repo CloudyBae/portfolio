@@ -1999,11 +1999,22 @@ input, select, textarea {
 			-ms-justify-content: center;
 			justify-content: center;
 			text-align: center;
-			padding: 3em 0 3em 0;
+			/* padding: 1em 0 1em 0; */
 		}
 
 			.main.style1 .text-left{
+				padding-top: 20vh;
+				padding-right: 5vh;
 				text-align: left;
+				flex: 1
+			}
+
+			@media screen and (max-width: 768px) {
+
+				.main.style1 .text-left{
+					padding-top: 0vh;
+					padding-right: 0vh;
+				}
 			}
 
 			.main.style1 h1 {
@@ -2035,8 +2046,11 @@ input, select, textarea {
 
 			.main.style1 > .content footer {
 				margin-top: 0;
-				top: 10vh;
-				position: relative
+				top: 5vh;
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
 			}
 
 		.main.style2 {
@@ -2304,13 +2318,39 @@ input, select, textarea {
 
 /* Intro */
 
+	.flex {
+		display: flex;
+	}
+
+	.flex-one {
+		flex: 1;
+	}
+
 	#intro {
-		background: url("images/overlay.png"), url("../../images/intro.jpg");
+		background: url("images/overlay.png"), url("../../images/cloud_bg.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
 		background-repeat: repeat, no-repeat;
 	}
+
+	#portrait img {
+		width: 130%;
+		height: 100% !important;
+		border-radius: 10%;
+		margin-left: -5vh;
+	}
+
+	@media screen and (max-width: 768px) {
+		#portrait {
+			flex: 0;
+		}
+
+		#portrait img {
+			width: 0;
+		}
+	}
+
 
 /* One */
 
