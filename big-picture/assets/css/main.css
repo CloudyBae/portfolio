@@ -2327,7 +2327,7 @@ input, select, textarea {
 	}
 
 	#intro {
-		background: url("images/overlay.png"), url("../../images/cloud_bg.jpg");
+		background: url("images/overlay.png"), url("../../images/one.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, bottom center;
@@ -2339,6 +2339,20 @@ input, select, textarea {
 		height: 100% !important;
 		border-radius: 10%;
 		margin-left: -5vh;
+	}
+
+	#badge1 img {
+		width: 60%;
+		height: 60% !important;
+		border-radius: 10%;
+		margin-left: +20vh;
+	}
+
+	#badge2 img {
+		width: 60%;
+		height: 60% !important;
+		border-radius: 10%;
+		margin-left: +10vh;
 	}
 
 	@media screen and (max-width: 768px) {
@@ -2364,7 +2378,7 @@ input, select, textarea {
 /* Two */
 
 	#two {
-		background: url("images/overlay.png"), url("../../images/two.jpg");
+		background: url("images/overlay.png"), url("../../images/one.jpg");
 		background-size: 256px 256px, cover;
 		background-attachment: fixed, fixed;
 		background-position: top left, center center;
@@ -2375,6 +2389,10 @@ input, select, textarea {
 	#contact {
 		overflow: hidden;
 		padding-bottom: 0;
+		background: url("images/overlay.png"), url("../../images/one.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
 	}
 
 		#contact .box {
@@ -2411,3 +2429,10 @@ input, select, textarea {
 			}
 
 		}
+	
+	#work {
+		background: url("images/overlay.png"), url("../../images/one.jpg");
+		background-size: 256px 256px, cover;
+		background-attachment: fixed, fixed;
+		background-position: top left, center center;
+	}
